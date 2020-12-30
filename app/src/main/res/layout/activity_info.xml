@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    tools:context=".Home.InfoAcount.infoActivity">
+
+    <ImageView
+        android:id="@+id/ivInfo_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <View
+        android:id="@+id/vInfo_View"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ivInfo_logo"/>
+
+    <Button
+        android:id="@+id/btnInfo_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vInfo_View"
+        android:background="@null"
+        android:text="     Email"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/tvInfo_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vInfo_View"
+        android:textColor="#FFF"
+        android:text="@string/email_info"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btnInfo_Instragam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInfo_Email"
+        android:background="@null"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:text="     Instragam"
+        android:textAllCaps="false"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/tvInfo_Instragam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInfo_Email"
+        android:text="@string/instragam_info"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btnInfo_Versi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInfo_Instragam"
+        android:background="@null"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:text="     Version"
+        android:textAllCaps="false"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInfo_Instragam"
+        android:text="@string/v1_0_0"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnInfo_Versi"/>
+
+
+
+</RelativeLayout>
