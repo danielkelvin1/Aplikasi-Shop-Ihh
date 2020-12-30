@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnLords_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="34 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnLords_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="67 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnLords_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnLords_1"
+        android:background="@drawable/background_radius"
+        android:text="134 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnLords_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnLords_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="335 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnLords_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnLords_3"
+        android:background="@drawable/background_radius"
+        android:text="670 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnLords_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnLords_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="1676 Diamonds"
+        android:textAllCaps="false"/>
+</RelativeLayout>

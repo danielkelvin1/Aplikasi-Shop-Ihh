@@ -5,52 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/base_color"
-    tools:context=".Home.ContentActivity">
+    tools:context=".Home.Content.Content_Activity">
 
-    <ImageView
-        android:id="@+id/imgContent_Slider"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/content_slide1"/>
-
-    <TextView
-        android:id="@+id/tvContent_Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="COD"
-        android:layout_below="@id/imgContent_Slider"
-        android:layout_marginLeft="20dp"
-        android:textColor="#FFF"
-        android:layout_centerHorizontal="true"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvContent_Title"
-        android:orientation="vertical"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/background_radius"
-        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imgContent_Slider"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/home_icon"/>
 
         <TextView
+            android:id="@+id/tvContent_Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masukan User ID"
-            android:layout_gravity="center"/>
+            android:text="title"
+            android:layout_below="@id/imgContent_Slider"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
+            android:id="@+id/llContent_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvContent_Title"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/background_radius"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masukan User ID"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edContent_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan User ID"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llContent_id">
+            <RelativeLayout
+                android:id="@+id/rlContent_try"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Masukan User ID"
-                android:inputType="number"/>
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
+                android:layout_below="@id/llContent_id"
+                android:layout_marginTop="15dp"/>
+
+        </ScrollView>
 
 </RelativeLayout>

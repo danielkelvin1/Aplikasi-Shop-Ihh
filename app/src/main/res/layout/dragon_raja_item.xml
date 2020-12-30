@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color">
+
+    <Button
+        android:id="@+id/btnDragon_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="67 Cupons"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="337 Cupons"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnDragon_1"
+        android:background="@drawable/background_radius"
+        android:text="1097 Cupons"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnDragon_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="2296 Cupons"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnDragon_3"
+        android:background="@drawable/background_radius"
+        android:text="2808 Cupons"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnDragon_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="5086 Cupons"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_7"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnDragon_5"
+        android:background="@drawable/background_radius"
+        android:text="Investment Fund"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnDragon_8"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnDragon_6"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="Investment Fun II"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

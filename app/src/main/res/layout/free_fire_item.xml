@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color">
+
+    <Button
+        android:id="@+id/btnFf_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="5 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="12 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnFf_1"
+        android:background="@drawable/background_radius"
+        android:text="50 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnFf_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="70 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnFf_3"
+        android:background="@drawable/background_radius"
+        android:text="140 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnFf_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="355 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_7"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnFf_5"
+        android:background="@drawable/background_radius"
+        android:text="720 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnFf_8"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnFf_6"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="1450 Diamonds"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

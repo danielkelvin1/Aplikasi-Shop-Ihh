@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/base_color"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnCod_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="31 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="62 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnCod_1"
+        android:background="@drawable/background_radius"
+        android:text="127 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnCod_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="317 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnCod_3"
+        android:background="@drawable/background_radius"
+        android:text="634 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnCod_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="1373 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_7"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnCod_5"
+        android:background="@drawable/background_radius"
+        android:text="2059 CP"/>
+
+    <Button
+        android:id="@+id/btnCod_8"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnCod_6"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="3564 CP"/>
+
+</RelativeLayout>

@@ -33,7 +33,6 @@ public class FragmentHome extends Fragment {
     private int data[]={R.drawable.content_slide1, R.drawable.content_slide2, R.drawable.content_slide3,
         R.drawable.content_slide4, R.drawable.content_slide5, R.drawable.content_slide6, R.drawable.content_slide7,
         R.drawable.content_slide8};
-    private CarouselView carouselView;
 
     @Nullable
     @Override

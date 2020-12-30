@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPubg_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="263 uc"/>
+
+    <Button
+        android:id="@+id/btnPubg_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="525 UC"/>
+
+    <Button
+        android:id="@+id/btnPubg_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnPubg_1"
+        android:background="@drawable/background_radius"
+        android:text="788 UC"/>
+
+    <Button
+        android:id="@+id/btnPubg_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnPubg_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="1050 UC"/>
+
+    <Button
+        android:id="@+id/btnPubg_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnPubg_3"
+        android:background="@drawable/background_radius"
+        android:text="1375 UC"/>
+
+    <Button
+        android:id="@+id/btnPubg_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnPubg_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="1638 UC"/>
+
+    <Button
+        android:id="@+id/btnPubg_7"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnPubg_5"
+        android:background="@drawable/background_radius"
+        android:text="1900 UC"/>
+</RelativeLayout>

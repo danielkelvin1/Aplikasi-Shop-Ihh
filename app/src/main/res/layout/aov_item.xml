@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnAov_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="7 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="18 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnAov_1"
+        android:background="@drawable/background_radius"
+        android:text="40 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnAov_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="90 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnAov_3"
+        android:background="@drawable/background_radius"
+        android:text="230 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnAov_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="470 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_7"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnAov_5"
+        android:background="@drawable/background_radius"
+        android:text="950 Vouchers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnAov_8"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnAov_6"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="1430 Vouchers"
+        android:textAllCaps="false"/>
+</RelativeLayout>

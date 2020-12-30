@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.shopihh.Home.Content.Content_Activity;
 import com.example.shopihh.R;
 
 import androidx.annotation.NonNull;
@@ -19,13 +19,13 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentH
     String title[];
     Context context;
     int images[];
-    int dataSlider[];
+    int slider[];
 
     public ContentAdapter(Context ct, int img[], String title[], int slider[]){
         this.context = ct;
         this.images = img;
         this.title = title;
-        this.dataSlider = slider;
+        this.slider = slider;
     }
 
     @NonNull
@@ -45,9 +45,11 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentH
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ContentIntent = new Intent(context, ContentActivity.class);
+
+                Intent ContentIntent = new Intent(context, Content_Activity.class);
                 ContentIntent.putExtra("title", title[position]);
-                ContentIntent.putExtra("slider", dataSlider[position]);
+                ContentIntent.putExtra("check", images[position]);
+                ContentIntent.putExtra("slider", slider[position]);
                 context.startActivity(ContentIntent);
             }
         });

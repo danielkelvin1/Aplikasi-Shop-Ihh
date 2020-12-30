@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnMlbb_1"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_radius"
+        android:text="59 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_2"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="85 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_3"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnMlbb_1"
+        android:background="@drawable/background_radius"
+        android:text="170 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_4"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnMlbb_2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="240 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_5"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnMlbb_3"
+        android:background="@drawable/background_radius"
+        android:text="296 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_6"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnMlbb_4"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="408 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_7"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnMlbb_5"
+        android:background="@drawable/background_radius"
+        android:text="568 Diamonds"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMlbb_8"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/btnMlbb_6"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_radius"
+        android:text="875 Diamonds"
+        android:textAllCaps="false"/>
+</RelativeLayout>
