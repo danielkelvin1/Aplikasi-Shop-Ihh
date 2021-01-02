@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import android.widget.Toast;
 
 
 import com.example.shopihh.R;
@@ -16,6 +16,24 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView btm_nav;
+
+    private static final int TIME_INTERVAL = 2000;
+    private long mBackPressed;
+
+    //jika di tekan 2 kali akan keluar dari aplikasi
+    @Override
+    public void onBackPressed()
+    {
+        if(mBackPressed + TIME_INTERVAL > System.currentTimeMillis()){
+            super.onBackPressed();
+            return;
+        }else{
+            Toast.makeText(this, "Tekan Sekali Lagi", Toast.LENGTH_SHORT).show();
+        }
+
+        mBackPressed = System.currentTimeMillis();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
