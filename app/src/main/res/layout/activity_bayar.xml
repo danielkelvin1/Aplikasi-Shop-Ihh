@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/base_color"
     tools:context=".Home.Content.BayarActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgBayar_Slider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/home_icon"/>
+
+    <TextView
+        android:id="@+id/tvBayar_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_below="@id/imgBayar_Slider"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvBayar_TopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nama Top Up"
+        android:layout_below="@+id/tvBayar_Id"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvBayar_Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp "
+        android:layout_below="@+id/tvBayar_TopUp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlBeli_beli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/background_radius"
+        android:layout_below="@+id/tvBayar_Harga">
+        <EditText
+            android:id="@+id/edBayar_Bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:inputType="number"
+            android:hint="Bayar"
+            android:layout_marginRight="40dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnBayar_Bayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tlBeli_beli"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/buttoncontent"
+        android:text="Bayar"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/tvBayar_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBayar_Bayar"
+        android:textSize="24sp"
+        android:text="Pesanan Anda Sedang Proses Silahkan Tunggu Beberapa Saat"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textColor="#FFF"
+        android:layout_marginTop="30dp"
+
+        />
+</RelativeLayout>

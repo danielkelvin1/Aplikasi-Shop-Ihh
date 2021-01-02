@@ -48,6 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btn_Login.setOnClickListener(this);
         btn_ForgotPswd.setOnClickListener(this);
 
+        //jika gambar view di tekan akan menganti warnanya menajdi gelap atau abu-abu
         ed_Password.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -109,6 +110,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 " = '"+password+"'",null);
         cursor.moveToFirst();
 
+        //kegunaan cursor untuk mengambil data per baris database
         if(cursor.getCount() > 0){
             //jika data di temukan
             Toast.makeText(this, "Berhasil Login", Toast.LENGTH_SHORT).show();
@@ -132,6 +134,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             //jika data tidak di temukan
             Toast.makeText(this, "gagal", Toast.LENGTH_SHORT).show();
         }
+        //menutup database
         search.close();
     }
 

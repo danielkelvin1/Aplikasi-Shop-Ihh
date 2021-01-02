@@ -91,7 +91,7 @@
         </LinearLayout>
     </RelativeLayout>
     
-    <ImageButton
+    <ImageView
         android:id="@+id/user_profile_photo"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -99,7 +99,7 @@
         android:layout_centerHorizontal="true"
         android:elevation="2dp"
         android:background="@drawable/background_profile"
-        android:src="@drawable/profile_icon"/>
+        android:src="@drawable/logo_icon"/>
 
     <TextView
         android:layout_width="fill_parent"

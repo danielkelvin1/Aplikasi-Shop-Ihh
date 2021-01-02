@@ -27,19 +27,21 @@
             android:id="@+id/tvAccount_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arcadeclasic"
             android:gravity="center"
-            android:textStyle="bold"
-            android:fontFamily="@font/pacifico"
+            android:text="Nama"
+            android:textSize="20sp"
             android:textColor="#000000"
-            android:text="Nama"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvAccount_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:fontFamily="@font/arcadeclasic"
             android:textStyle="bold"
-            android:fontFamily="@font/pacifico"
+            android:textSize="20sp"
             android:textColor="#000000"
             android:text="Username"/>
 
@@ -47,9 +49,10 @@
             android:id="@+id/tvAccount_jk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/pacifico"
             android:gravity="center"
+            android:fontFamily="@font/arcadeclasic"
             android:text="Jenis Kelamin"
+            android:textSize="20sp"
             android:textColor="#000000"
             android:textStyle="bold" />
     </LinearLayout>
@@ -59,13 +62,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tentang_kami"
+        android:textSize="20sp"
         android:layout_below="@id/llAccount_Layout"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/background_radius"
         android:textAllCaps="false"
-        android:fontFamily="@font/pacifico"
+        android:fontFamily="@font/arcadeclasic"
         android:textStyle="bold"
         android:drawableTop="@drawable/info_icon"/>
 
@@ -74,13 +78,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/pengaturan_akun"
+        android:textSize="20sp"
         android:layout_below="@id/btnAccount_info"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/arcadeclasic"
         android:background="@drawable/background_radius"
         android:textAllCaps="false"
-        android:fontFamily="@font/pacifico"
         android:textStyle="bold"
         android:drawableTop="@drawable/people_icon"/>
 

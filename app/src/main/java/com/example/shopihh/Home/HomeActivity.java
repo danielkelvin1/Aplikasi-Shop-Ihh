@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 
+
 import com.example.shopihh.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -37,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment =null;
-
+                //set jika ingin menganti fragment degan cara menekan bottom nav
                 switch (item.getItemId()){
                     case R.id.btmMenu_Home:
                         selectedFragment = new FragmentHome();
@@ -53,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+
 
     }
 }

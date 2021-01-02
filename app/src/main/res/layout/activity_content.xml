@@ -56,6 +56,7 @@
         </LinearLayout>
 
         <ScrollView
+            android:id="@+id/svContent_Scroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/llContent_id">
@@ -65,7 +66,33 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/llContent_id"
                 android:layout_marginTop="15dp"/>
-
         </ScrollView>
+
+    <TextView
+        android:id="@+id/tvContent_Harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svContent_Scroll"
+        android:text="Rp 0"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnContent_Beli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContent_Harga"
+        android:text="Beli"
+        android:background="@drawable/buttoncontent"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:layout_marginLeft="40dp"/>
 
 </RelativeLayout>

@@ -41,10 +41,13 @@ public class PengaturanAccountActivity extends AppCompatActivity {
         edt_Alamat = findViewById(R.id.edtPengaturan_Alamat);
         btn_Simpan = findViewById(R.id.btnPengaturan_Simpan);
 
+        //setcolor dan font di xml spinner
         ArrayAdapter adapter = ArrayAdapter.createFromResource(
                 this, R.array.JK, R.layout.spinner_color_pengaturan
         );
+        //set font ukuran dan warna di dropdows / saat memilih
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_pengaturan);
+        //set adapter untuk spinner
         sp_Jk.setAdapter(adapter);
 
         //inisilisasi untuk mendapatkan kenteks dari myDB
@@ -56,6 +59,7 @@ public class PengaturanAccountActivity extends AppCompatActivity {
         edt_Nama.setText(user.getNama());
         edt_Username.setText(user.getUsername());
 
+        //seleksi pada saat baru masuk
         if(user.getJk().equals("Pria")) {
             sp_Jk.setSelection(0);
         }else{
@@ -65,6 +69,8 @@ public class PengaturanAccountActivity extends AppCompatActivity {
         edt_Email.setText(user.getEmail());
         edt_Alamat.setText(user.getAlamat());
 
+
+        //intent pada saat menyimpan
         btn_Simpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,13 +114,18 @@ public class PengaturanAccountActivity extends AppCompatActivity {
         values.put(loginProperty.Email, userEdit.getEmail());
         values.put(loginProperty.Alamat, userEdit.getAlamat());
 
+        //update data base
         long check = edit.update(loginProperty.NamaTabel, values, loginProperty.Username+" = '"+userEdit.getUsername()+"'",
                 null);
+
+        //jika berhasil maka nilainya lebih besar dari 0
         if(check>0){
             Toast.makeText(this, "Data Berhasil Di Simpan", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, "Data Gagal Di Simpan", Toast.LENGTH_SHORT).show();
         }
+
+        //menutup database
         edit.close();
     }
 }

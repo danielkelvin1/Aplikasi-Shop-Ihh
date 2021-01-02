@@ -1,5 +1,6 @@
 package com.example.shopihh.Database;
 
+//property data tabel login
 public abstract class loginProperty {
     public static final String NamaTabel = "login";
     public static final String Username = "username";

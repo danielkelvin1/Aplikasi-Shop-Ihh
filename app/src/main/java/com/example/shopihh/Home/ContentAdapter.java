@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.shopihh.Home.Content.Content_Activity;
 import com.example.shopihh.R;
+import com.example.shopihh.User;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,25 +21,32 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentH
     Context context;
     int images[];
     int slider[];
+    User user;
 
-    public ContentAdapter(Context ct, int img[], String title[], int slider[]){
+    //construktor agar dapat context paling penting dan data lainya yang berguna
+    public ContentAdapter(Context ct, int img[], String title[], int slider[], User user){
         this.context = ct;
         this.images = img;
         this.title = title;
         this.slider = slider;
+        this.user = user;
     }
 
     @NonNull
     @Override
     public ContentHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //membuat sub layout baru
         LayoutInflater inflater = LayoutInflater.from(context);
         View view =inflater.inflate(R.layout.list_item, parent, false);
 
+        //retrun class holder agar bisa di akses di bindViewHolder
         return new ContentHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ContentHolder holder, final int position) {
+        //jika ingin mengakses atau set harus mengunakan holder karena disana ada item dari holder class
+
         holder.title.setText(title[position]);
         holder.icon.setImageResource(images[position]);
 
@@ -48,19 +56,22 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentH
 
                 Intent ContentIntent = new Intent(context, Content_Activity.class);
                 ContentIntent.putExtra("title", title[position]);
-                ContentIntent.putExtra("check", images[position]);
+                ContentIntent.putExtra("checkimg", images[position]);
+                ContentIntent.putExtra("user", user);
                 ContentIntent.putExtra("slider", slider[position]);
                 context.startActivity(ContentIntent);
             }
         });
     }
 
+    //fungsi ini berguna untuk menentukan banyaknya item
     @Override
     public int getItemCount() {
         return images.length;
     }
 
     public class ContentHolder extends RecyclerView.ViewHolder {
+        //holder berguna untuk menghubungkan class ke xml
         TextView title;
         ImageView icon;
         ConstraintLayout constraintLayout;

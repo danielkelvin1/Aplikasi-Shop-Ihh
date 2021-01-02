@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        // fungsi waktu yang menjeda nilai yang sudah di set
        new Handler().postDelayed(new Runnable(){
            @Override
            public void run(){

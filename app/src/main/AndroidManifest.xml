@@ -9,13 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.Content.Arena_Of_ValorActivity"></activity>
-        <activity android:name=".Home.Content.PubgActivity" />
-        <activity android:name=".Home.Content.Mobile_LegendsActivity" />
-        <activity android:name=".Home.Content.Lords_MobileActivity" />
-        <activity android:name=".Home.Content.League_Of_LegendsActivity" />
-        <activity android:name=".Home.Content.Free_FireActivity" />
-        <activity android:name=".Home.Content.Dragon_RajaActivity" />
+        <activity android:name=".Home.Content.BayarActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Home.Content.Content_Activity"
             android:screenOrientation="portrait" /> <!-- screenOrientationn="potrait" menyeting screen agar hanya bisa potrait -->
@@ -47,9 +42,6 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

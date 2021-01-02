@@ -50,6 +50,7 @@ public class SignUpActivity extends AppCompatActivity {
         //inisialisasai untuk mendapatkan konteks dari my db
         myDB = new DatabaseHelper(this);
 
+        //jika gambar view di tekan akan menganti warnanya menajdi gelap atau abu-abu
         ed_Password.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -81,6 +82,7 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
+
         btn_SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,6 +113,7 @@ public class SignUpActivity extends AppCompatActivity {
         values.put(loginProperty.Email, setEmail);
         values.put(loginProperty.Alamat, setAlamat);
 
+        //menambahkan data di database
         long result = create.insert(loginProperty.NamaTabel, null, values);
         create.close();
         if(result == -1){
@@ -121,6 +124,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
+    //fungsi ini digunakan untuk set data dari xml
     private void setData(){
      setUsername = ed_Username.getText().toString();
      setPassword = ed_Password.getText().toString();

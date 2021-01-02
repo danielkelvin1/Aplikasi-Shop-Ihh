@@ -138,14 +138,14 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <ImageButton
+    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/background_profile"
         android:layout_marginTop="46dp"
         android:layout_centerHorizontal="true"
         android:elevation="2dp"
-        android:src="@drawable/profile_icon" />
+        android:src="@drawable/logo_icon" />
 
     <TextView
         android:layout_width="match_parent"

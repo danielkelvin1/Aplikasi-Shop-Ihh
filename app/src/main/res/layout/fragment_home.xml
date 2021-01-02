@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/base_color">
 
+
         <RelativeLayout
             android:id="@+id/rlHome_Profile"
             android:layout_width="match_parent"
@@ -43,11 +44,20 @@
                 android:textColor="@color/base_color"/>
         </RelativeLayout>
 
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imgsHome_Slider"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:iss_auto_cycle="true"
+        android:layout_below="@id/rlHome_Profile"
+        app:iss_period="4000"
+        app:iss_delay="0"
+        />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHome_Content"
             android:layout_width="match_parent"
-            android:layout_below="@id/rlHome_Profile"
+            android:layout_below="@id/imgsHome_Slider"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"

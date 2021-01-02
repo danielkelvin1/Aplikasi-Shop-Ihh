@@ -2,7 +2,8 @@ package com.example.shopihh;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
+//ini adalah class user
+// parcelable berguna untuk mengirim di put intent
 public class User implements Parcelable {
     public String username;
     public String password;
@@ -28,7 +29,7 @@ public class User implements Parcelable {
         this.password = password;
     }
 
-    public String getNama() {
+    public String getNama()  {
         return nama;
     }
 

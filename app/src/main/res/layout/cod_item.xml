@@ -8,6 +8,7 @@
         android:layout_width="185dp"
         android:layout_height="50dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginRight="3dp"
         android:background="@drawable/background_radius"
         android:text="31 CP"/>
 

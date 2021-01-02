@@ -36,6 +36,7 @@ public class ForgotPaswordActivity extends AppCompatActivity {
         ed_Password = findViewById(R.id.edForgot_Password);
         ti_Password = findViewById(R.id.tiForgot_Pasword);
 
+        //mendapatkan context
         myDB = new DatabaseHelper(this);
         viewControl = true;
 
@@ -89,6 +90,8 @@ public class ForgotPaswordActivity extends AppCompatActivity {
         String Username = ed_Username.getText().toString();
         ContentValues values = new ContentValues();
         values.put(loginProperty.Password, Password);
+
+        //update data di database
         long check = save.update(loginProperty.NamaTabel, values, loginProperty.Username+" = '"+Username+"'",null);
         if(check>0){
             Toast.makeText(this, "Berhasil Menganti Kata Sandi", Toast.LENGTH_SHORT).show();
@@ -105,6 +108,8 @@ public class ForgotPaswordActivity extends AppCompatActivity {
         cursor = search.rawQuery("SELECT * FROM "+loginProperty.NamaTabel+" WHERE "+
                 loginProperty.Username+" = '"+Username+"'",null);
         cursor.moveToFirst();
+
+        //jika data ditemukan akan menganti text di button dan menampilkan field edit password
         if(cursor.getCount()>0){
             ed_Password.setVisibility(View.VISIBLE);
             ti_Password.setVisibility(View.VISIBLE);
@@ -113,6 +118,7 @@ public class ForgotPaswordActivity extends AppCompatActivity {
         }else{
             Toast.makeText(this, "Data Tidak Di Temukan", Toast.LENGTH_SHORT).show();
         }
+        //menutup database
         search.close();
     }
 }

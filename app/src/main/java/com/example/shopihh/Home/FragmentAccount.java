@@ -41,6 +41,7 @@ public class FragmentAccount extends Fragment implements View.OnClickListener {
 
         //mengambil object user memakai intent parcelabel
         User user = getActivity().getIntent().getParcelableExtra("user");
+        //set data ke xml
         tv_nama.setText(user.getNama());
         tv_username.setText(user.getUsername());
         tv_jk.setText(user.getJk());
