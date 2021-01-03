@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.shopihh.Home.HomeActivity;
 import com.example.shopihh.R;
 
 public class Content_Activity extends AppCompatActivity implements View.OnClickListener {
@@ -25,6 +26,19 @@ public class Content_Activity extends AppCompatActivity implements View.OnClickL
     private int harga, imageSlider, check;
     //untuk mengirimkan di intent seperti nama jual seperti 100 diamond dll
     private String namaTopUp, title;
+
+
+    //jika di tekan tombol back di hp akan kembali ke home activity
+    @Override
+    public void onBackPressed() {
+        //check berguna mengontrol fragment dan user prioritas
+        Intent homeIntent = new Intent(Content_Activity.this, HomeActivity.class);
+        homeIntent.putExtra("user", getIntent().getParcelableExtra("user"));
+        homeIntent.putExtra("check","check");
+        startActivity(homeIntent);
+        finish();
+        super.onBackPressed();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

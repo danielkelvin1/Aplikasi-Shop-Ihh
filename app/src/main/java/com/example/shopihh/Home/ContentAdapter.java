@@ -1,5 +1,6 @@
 package com.example.shopihh.Home;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -60,6 +61,8 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentH
                 ContentIntent.putExtra("user", user);
                 ContentIntent.putExtra("slider", slider[position]);
                 context.startActivity(ContentIntent);
+                //finish dari context
+                ((Activity) context).finish();
             }
         });
     }

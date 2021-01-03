@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
             super.onBackPressed();
             return;
         }else{
-            Toast.makeText(this, "Tekan Sekali Lagi", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Tekan Lagi Untuk Keluar", Toast.LENGTH_SHORT).show();
         }
 
         mBackPressed = System.currentTimeMillis();

@@ -94,9 +94,9 @@ public class BayarActivity extends AppCompatActivity {
                             HomeIntent.putExtra("user", getIntent().getParcelableExtra("user"));
                             startActivity(HomeIntent);
                             finish();
-                            //di delay 3000 = 3 detik
+                            //delay 2000 = 2 detik
                         }
-                    },3000);
+                    },2000);
                 }else{
                     Toast.makeText(BayarActivity.this, "Pembayaran Kurang "+String.format(
                             "Rp %,d",bayar), Toast.LENGTH_SHORT).show();

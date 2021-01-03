@@ -68,7 +68,6 @@ public class FragmentHome extends Fragment {
         }
         imageSlider.setImageList(imageList, ScaleTypes.FIT);
 
-
         recyclerView = view.findViewById(R.id.rvHome_Content);
         //content adapter berguna untuk item recyler
         ContentAdapter contentAdapter = new ContentAdapter(getContext(), imageContent, title, data, user);
