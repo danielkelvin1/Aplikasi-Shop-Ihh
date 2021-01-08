@@ -73,7 +73,7 @@ public class infoActivity extends AppCompatActivity implements View.OnClickListe
                     btn_Email.setBackgroundColor(getColor(R.color.orange));
                     break;
                 case R.id.btnInfo_Instragam:
-                    btn_Email.setBackgroundColor(getColor(R.color.orange));
+                    btn_Instragam.setBackgroundColor(getColor(R.color.orange));
                     break;
             }
         }
